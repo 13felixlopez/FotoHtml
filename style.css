@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('Imagen/Cora.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d32f2f;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.slides img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.slides img.active {
+    transform: scale(1.2);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.text-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe0e0;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.friendship-text {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.8;
+    font-style: italic;
+    background: #ffcccb;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.special-image-section {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.special-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.special-image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.special-image-container img:hover {
+    transform: scale(1.1);
+}
